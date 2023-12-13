@@ -4,7 +4,7 @@ import createApolloGraphqlServer from "./graphql";
 
 async function init() {
   const app = express();
-  const port = Number(process.env.PORT) || 3000;
+  const port = Number(process.env.PORT) || 8000;
 
   app.use(express.json());
 
@@ -17,3 +17,5 @@ async function init() {
     console.log(`Example app listening at http://localhost:${port}`);
   });
 }
+
+init();
